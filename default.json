@@ -6,8 +6,11 @@
     ],
     "extends": [
         "config:base",
+        ":automergeDigest",
         ":disableRateLimiting",
         ":rebaseStalePrs",
+        "docker:enableMajor",
+        "docker:pinDigests",
         "group:linters",
         "group:allNonMajor",
         "helpers:pinGitHubActionDigests"
