@@ -9,6 +9,7 @@
         ":rebaseStalePrs",
         "group:linters",
         "group:allNonMajor",
+        "helpers:pinGitHubActionDigests",
         "schedule:earlyMondays"
     ],
     "platformAutomerge": true,
