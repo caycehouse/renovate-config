@@ -1,0 +1,25 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "My shareable config for @renovateapp",
+    "labels": [
+        "renovate/{{depName}}"
+    ],
+    "extends": [
+        "config:base",
+        ":rebaseStalePrs",
+        "group:linters",
+        "group:allNonMajor",
+        "schedule:earlyMondays"
+    ],
+    "platformAutomerge": true,
+    "rebaseWhen": "behind-base-branch",
+    "packageRules": [
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "groupName": "GitHub Actions",
+            "automerge": true
+        }
+    ]
+}
