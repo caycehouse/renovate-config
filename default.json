@@ -6,14 +6,13 @@
     ],
     "extends": [
         "config:base",
+        ":disableRateLimiting",
         ":rebaseStalePrs",
         "group:linters",
         "group:allNonMajor",
-        "helpers:pinGitHubActionDigests",
-        "schedule:earlyMondays"
+        "helpers:pinGitHubActionDigests"
     ],
     "platformAutomerge": true,
-    "rebaseWhen": "behind-base-branch",
     "packageRules": [
         {
             "matchManagers": [
