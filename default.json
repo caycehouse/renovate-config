@@ -17,7 +17,7 @@
         "group:linters",
         "group:allNonMajor",
         "helpers:pinGitHubActionDigests",
-        "github>caycehouse/renovate-config:labels.json5",
+        "github>caycehouse/renovate-config:labels.json5"
     ],
     "platformAutomerge": true,
     "packageRules": [
