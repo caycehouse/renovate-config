@@ -16,7 +16,8 @@
         "docker:pinDigests",
         "group:linters",
         "group:allNonMajor",
-        "helpers:pinGitHubActionDigests"
+        "helpers:pinGitHubActionDigests",
+        "github>caycehouse/renovate-config:labels.json5",
     ],
     "platformAutomerge": true,
     "packageRules": [
@@ -26,19 +27,6 @@
             ],
             "groupName": "GitHub Actions",
             "automerge": true
-        },
-        // labels
-        {
-          "matchUpdateTypes": ["major"],
-          "labels": ["type/major"]
-        },
-        {
-          "matchUpdateTypes": ["minor"],
-          "labels": ["type/minor"]
-        },
-        {
-          "matchUpdateTypes": ["patch"],
-          "labels": ["type/patch"]
-        },
+        }
     ]
 }
