@@ -10,7 +10,6 @@
         ":semanticCommits",
         ":timezone(America/New_York)",
         "docker:enableMajor",
-        "docker:pinDigests",
         "group:linters",
         "group:allNonMajor",
         "helpers:pinGitHubActionDigests",
