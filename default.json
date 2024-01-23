@@ -1,28 +1,15 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "description": "My shareable config for @renovateapp",
     "extends": [
-        "config:base",
+        "config:recommended",
         ":automergeBranch",
         ":automergeDigest",
         ":disableRateLimiting",
-        ":rebaseStalePrs",
         ":semanticCommits",
         ":timezone(America/New_York)",
         "docker:enableMajor",
-        "group:linters",
-        "group:allNonMajor",
         "helpers:pinGitHubActionDigests",
         "github>caycehouse/renovate-config:labels.json5"
     ],
-    "platformAutomerge": true,
-    "packageRules": [
-        {
-            "matchManagers": [
-                "github-actions"
-            ],
-            "groupName": "GitHub Actions",
-            "automerge": true
-        }
-    ]
+    "rebaseWhen": "conflicted"
 }
