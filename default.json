@@ -5,13 +5,12 @@
         ":automergeBranch",
         ":automergeDigest",
         ":disableRateLimiting",
-        ":semanticCommits",
         ":timezone(America/New_York)",
         "docker:enableMajor",
         "helpers:pinGitHubActionDigests",
         "github>caycehouse/renovate-config:automerge-github-actions.json5",
         "github>caycehouse/renovate-config:labels.json5",
-        "github>caycehouse/renovate-config:semantic-commits.json5",
+        "github>caycehouse/renovate-config:semantic-commits.json5"
     ],
     "rebaseWhen": "conflicted"
 }
