@@ -9,6 +9,7 @@
         "docker:enableMajor",
         "helpers:pinGitHubActionDigests",
         "github>caycehouse/renovate-config:automerge-github-actions.json5",
+        "github>caycehouse/renovate-config:generic-regex-manager.json5",
         "github>caycehouse/renovate-config:labels.json5",
         "github>caycehouse/renovate-config:semantic-commits.json5"
     ],
