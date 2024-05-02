@@ -3,7 +3,6 @@
     "extends": [
         "config:recommended",
         ":automergeBranch",
-        ":automergeDigest",
         ":disableRateLimiting",
         ":timezone(America/New_York)",
         "docker:enableMajor",
