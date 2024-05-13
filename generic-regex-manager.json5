@@ -10,7 +10,7 @@
         // # renovate: depName=tailscale/tailscale datasource=github-releases
         // version: 1.56.1
         'depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)( repository=(?<registryUrl>\\S+))?( extractVersion=(?<extractVersion>\\S+))?\n.*?: \"?(?<currentValue>.*)\"?\n',
-        // # renovate: datasource=github-releases depName=rancher/system-upgrade-controller
+        // # renovate: depName=rancher/system-upgrade-controller datasource=github-releases
         // https://github.com/rancher/system-upgrade-controller/releases/download/v0.13.2/crd.yaml
         "depName=(?<depName>\\S+) datasource=(?<datasource>\\S+)\\n.+/(?<currentValue>(v|\\d)[^/]+)",
       ],
