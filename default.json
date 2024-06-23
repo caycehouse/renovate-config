@@ -2,16 +2,24 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:recommended",
-        ":automergeDigest",
-        ":automergeBranch",
+        ":dependencyDashboard",
         ":disableRateLimiting",
-        ":timezone(America/New_York)",
         "docker:enableMajor",
-        "helpers:pinGitHubActionDigests",
-        "github>caycehouse/renovate-config:automerge-github-actions.json5",
-        "github>caycehouse/renovate-config:generic-regex-manager.json5",
+        ":enablePreCommit",
+        "mergeConfidence:all-badges",
+        "github>caycehouse/renovate-config:autoMerge.json5",
+        "github>caycehouse/renovate-config:commitMessage.json5",
+        "github>caycehouse/renovate-config:customManagers.json5",
         "github>caycehouse/renovate-config:labels.json5",
-        "github>caycehouse/renovate-config:semantic-commits.json5"
+        "github>caycehouse/renovate-config:semanticCommits.json5"
     ],
-    "rebaseWhen": "conflicted"
+    "timezone": "America/New_York",
+    "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+    "suppressNotifications": [
+        "prEditedNotification",
+        "prIgnoreNotification"
+    ],
+    "rebaseWhen": "conflicted",
+    "commitBodyTable": true,
+    "platformCommit": true
 }
