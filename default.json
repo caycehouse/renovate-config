@@ -7,7 +7,6 @@
         "docker:enableMajor",
         ":enablePreCommit",
         "mergeConfidence:all-badges",
-        ":separatePatchReleases",
         "github>caycehouse/renovate-config:autoMerge.json5",
         "github>caycehouse/renovate-config:commitMessage.json5",
         "github>caycehouse/renovate-config:customManagers.json5",
