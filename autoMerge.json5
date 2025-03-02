@@ -7,7 +7,7 @@
       "automerge": true,
       "automergeType": "branch",
       "matchUpdateTypes": ["digest"],
-      "matchPackagePatterns": ["ghcr.io/bjw-s", "ghcr.io/onedr0p", "ghcr.io/caycehouse"],
+      "matchPackageNames": ["/bjw-s/", "/onedr0p/", "/caycehouse/"],
       "ignoreTests": true
     },
     {
