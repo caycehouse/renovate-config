@@ -7,7 +7,7 @@
       "automerge": true,
       "automergeType": "branch",
       "matchUpdateTypes": ["digest"],
-      "matchPackageNames": ["/bjw-s/", "/onedr0p/", "/caycehouse/"],
+      "matchPackageNames": ["/bjw-s/", "/onedr0p/"],
       "ignoreTests": true
     },
     {
@@ -20,12 +20,12 @@
       "ignoreTests": false
     },
     {
-      "description": ["Auto-merge trusted GitHub Actions"],
+      "description": ["Auto-merge GitHub Actions"],
       "matchManagers": ["github-actions"],
       "automerge": true,
       "automergeType": "branch",
       "matchUpdateTypes": ["minor", "patch", "digest"],
-      "matchPackageNames": ["/^actions\\//", "/^cloudflare\\//", "/^renovatebot\\//"],
+      "minimumReleaseAge": "3 days",
       "ignoreTests": true
     },
     {
