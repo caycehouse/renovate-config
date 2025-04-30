@@ -7,7 +7,7 @@
       automerge: true,
       automergeType: "pr",
       matchUpdateTypes: ["digest"],
-      matchPackageNames: ["/home-operations/", "/caycehouse/"],
+      matchPackageNames: ["/caycehouse/", "/home-operations/", "/nextcloud/"],
       ignoreTests: false,
     },
     {
