@@ -4,10 +4,10 @@
     {
       customType: "regex",
       description: "Process annotated dependencies",
-      fileMatch: [
-        "(^|/).+\\.env$",
-        "(^|/).+\\.sh$",
-        "(^|/).+\\.ya?ml(?:\\.j2)?$",
+      managerFilePatterns: [
+        "/(^|/).+\\.env$/",
+        "/(^|/).+\\.sh$/",
+        "/(^|/).+\\.ya?ml(?:\\.j2)?$/",
       ],
       matchStrings: [
         // # renovate: datasource=github-releases depName=k3s-io/k3s
@@ -26,8 +26,8 @@
     {
       customType: "regex",
       description: "Process GitHub download dependencies in YAML files",
-      fileMatch: [
-        "\\.ya?ml(\\.j2)?$"
+      managerFilePatterns: [
+        "/(^|/).+\\.ya?ml(?:\\.j2)?$/",
       ],
       matchStrings: [
         // https://github.com/rancher/system-upgrade-controller/releases/download/v0.13.2/crd.yaml
