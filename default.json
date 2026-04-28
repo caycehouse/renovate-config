@@ -15,6 +15,9 @@
         ":semanticCommits",
         ":timezone(America/New_York)"
     ],
+    "registryAliases": {
+        "mirror.gcr.io": "docker.io"
+    },
     "timezone": "America/New_York",
     "dependencyDashboardTitle": "Renovate Dashboard 🤖",
     "suppressNotifications": [
